@@ -167,8 +167,45 @@ const yo5 = new Person5 ("Rafa", 68, 1.7, 1979);
 yo5.printHobbies();
 
 
-// ***RETO6***
+// ***RETO6***   
 // - Guardar la clase Person en un fichero con extensión js person.js
 // - Modificar ese fichero para exportar la clase
 // - Importar la clase en otro fichero denominado personTest js
 // - Crear un objeto de la clase Persona y probar todos sus atributos y métodos
+// ESTO CONTINUA EN LOS ARCHIVOS person.js y personTest.js ----->>>
+
+
+// ***RETO7***
+// Crear una clase que se llame Contacts que tenga un atributo que sea 
+// un array de objetosde la clase Person. No olvides seguir trabajando 
+// desde tu rama ”dia 1" 
+// • El constructor de la clase Contacts no debe tener parámetros de 
+// entrada pero debe inicializar el array
+// • Crear un método llamado printPersons que imprima cada uno de los 
+// atributos de cada objeto Person
+
+class Contacts {
+
+    constructor() {
+        this.person5 = [new Person5("Dani", 70, 1.74, 1982)];
+    }
+
+    printPersons() {
+        for (let i = 0; i < this.person5.length; i++);
+        console.log(this.person5);
+    }
+}
+
+const contactoPerson = new Contacts();
+contactoPerson.printPersons();
+
+
+
+// ***RETO8***
+// Guardar la clase Contacts en un fichero con extensión .js (contacts.js).
+// Modificar ese fichero para exportar la clase. 
+// Importar la clase en otro fichero denominado contactsTest.js
+// Crear un objeto de la clase Contacts y probar todos sus atributos y métodos.
+// Sube tods los cambios a tu rama "dia1" y después haz merge con tu rama "main".
+// En caso de tener conflicto soluciónalos.
+// ESTO CONTINUA EN LOS ARCHIVOS contacts.js y contactsTest.js ----->>>

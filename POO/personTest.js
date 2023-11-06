@@ -20,4 +20,5 @@ console.log(nuevaPersona.printHobbies());
 
 // Sube todos los cambios a tu rama "día1"
 
-
+//   -->> Enlace de cuenta GIT por si queréis verificar: 
+//        https://github.com/rafaelLagoGomez/week_2/tree/dia1/POO
