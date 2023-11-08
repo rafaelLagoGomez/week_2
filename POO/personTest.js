@@ -6,10 +6,10 @@
 // - Crear un objeto de la clase Persona y probar todos sus atributos y métodos
 
 
-const PersonTest = require("./person");
+const Person = require("./person");
 
 let hobbies = ["tenis", "padel", "cantar"];
-const nuevaPersona = new PersonTest("Luis", 80, 1.85, 1986, hobbies);
+const nuevaPersona = new Person("Luis", 80, 1.85, 1986, hobbies);
 
 
 console.log(nuevaPersona.calcularEdad());

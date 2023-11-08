@@ -7,7 +7,7 @@
 
 class Person {
 
-    constructor (nombre, pesoKg, alturaMtr, yearOfBirth) {
+    constructor (nombre, pesoKg, alturaMtr, yearOfBirth, hobbies) {
         this.nombre = nombre;        
         this.alturaMtr = alturaMtr;
         this.pesoKg = pesoKg;
@@ -29,20 +29,15 @@ class Person {
     }
 
     printAll() {
-        for (const atributos in this) {
-            console.log(`${atributos} - ${this[atributos]}`);
+        for (var atribute in this) {
+            console.log(`${atribute} - ${this[atribute]}`); 
         }
-        
     }
-
     printHobbies() {
-        console.log(this.hobbies);
+        return this.hobbies;
     }
 
 }
 
-let hobbies = ["pintar", "correr", "cantar"];
-const yo = new Person ("Rafa", 68, 1.7, 1979);
-yo.printHobbies();
 
 module.exports = Person;
