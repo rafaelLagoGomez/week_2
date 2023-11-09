@@ -29,10 +29,19 @@ class Person {
     }
 
     printAll() {
-        for (var atribute in this) {
-            console.log(`${atribute} - ${this[atribute]}`); 
-        }
+        let atribute = "";
+        atribute = `Nombre - ${this.nombre}
+        AlturaMtr - ${this.alturaMtr}
+        PesoKg - ${this.pesoKg}
+        ColorPelo - ${this.colorPelo}
+        ColorOjos - Negro
+        Sexo - Hombre
+        YearOfBirth - ${this.yearOfBirth}`
+
+        return atribute;
+        
     }
+    
     printHobbies() {
         return this.hobbies;
     }

@@ -109,9 +109,16 @@ class Person4 {
     }
 
     printAll() {
-        for (const atributos in this) {
-            console.log(`${atributos} - ${this[atributos]}`);
-        }
+        let atribute = "";
+        atribute = `Nombre - ${this.nombre}
+        AlturaMtr - ${this.alturaMtr}
+        PesoKg - ${this.pesoKg}
+        ColorPelo - ${this.colorPelo}
+        ColorOjos - Negro
+        Sexo - Hombre
+        YearOfBirth - ${this.yearOfBirth}`
+
+        return atribute;
         
     }
 
@@ -184,20 +191,26 @@ yo5.printHobbies();
 // • Crear un método llamado printPersons que imprima cada uno de los 
 // atributos de cada objeto Person
 
+const Person = require("./person");
+
 class Contacts {
 
     constructor() {
-        this.person5 = [new Person5("Dani", 70, 1.74, 1982)];
+        this.persons = Person[];
     }
 
     printPersons() {
-        for (let i = 0; i < this.person5.length; i++);
-        console.log(this.person5);
+        let atributos ="";
+        for (let i = 0; i < this.persons.length; i++);
+        atributos =+ this.persons[i];
+        
+        return atributos
     }
+    
 }
 
-const contactoPerson = new Contacts();
-contactoPerson.printPersons();
+// const contactoPerson = new Contacts();
+// console.log(contactoPerson.printPersons());
 
 
 

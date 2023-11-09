@@ -5,10 +5,20 @@
 // Importar la clase en otro fichero denominado contactsTest.js
 // Crear un objeto de la clase Contacts y probar todos sus atributos y métodos.
 
-const contactsTest = require("./contacts");
+const Person = require("./person");
+const Contacts = require("./contacts");
 
-const contactPerson = new contactsTest("Luis", 80, 1.85, 1986);
+let contactPerson = new Contacts();
 
-console.log(contactPerson.yo.calcularEdad())
+let person1 = new Person ("Rafa", 68, 1.7, 1979);
+let person2 = new Person ("Mario", 85, 1.85, 1985);
 
-// NO CONSIGO REALIZAR ESTE RETO8-ContactTest DE IMPORTAR AMBAS CLASES
+contactPerson = [person1, person2];
+
+console.log(contactPerson);
+
+
+
+
+
+
