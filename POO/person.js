@@ -1,9 +1,4 @@
 
-// ***RETO6***
-// - Guardar la clase Person en un fichero con extensión js person.js
-// - Modificar ese fichero para exportar la clase
-// - Importar la clase en otro fichero denominado personTest js
-// - Crear un objeto de la clase Persona y probar todos sus atributos y métodos
 
 class Person {
 
@@ -28,19 +23,24 @@ class Person {
         return result;
     }
 
-    printAll() {
-        let atribute = "";
-        atribute = `Nombre - ${this.nombre}
-        AlturaMtr - ${this.alturaMtr}
-        PesoKg - ${this.pesoKg}
-        ColorPelo - ${this.colorPelo}
-        ColorOjos - Negro
-        Sexo - Hombre
-        YearOfBirth - ${this.yearOfBirth}`
+    // printAll() {
+    //     let atribute = "";
+    //     atribute = `Nombre - ${this.nombre}
+    //     AlturaMtr - ${this.alturaMtr}
+    //     PesoKg - ${this.pesoKg}
+    //     ColorPelo - ${this.colorPelo}
+    //     ColorOjos - Negro
+    //     Sexo - Hombre
+    //     YearOfBirth - ${this.yearOfBirth}`
 
-        return atribute;
+    //     return atribute;
         
-    }
+        printAll() {
+            for (const atributos in this) {
+                console.log(`${atributos} - ${this[atributos]}`);
+            }
+    
+        }
     
     printHobbies() {
         return this.hobbies;

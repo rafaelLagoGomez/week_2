@@ -196,15 +196,14 @@ const Person = require("./person");
 class Contacts {
 
     constructor() {
-        this.persons = Person[];
+        this.persons = [];
     }
 
     printPersons() {
-        let atributos ="";
-        for (let i = 0; i < this.persons.length; i++);
-        atributos =+ this.persons[i];
+        for (let i = 0; i < this.persons.length; i++) {
+            this.persons[i].printAll();
+        }
         
-        return atributos
     }
     
 }
